@@ -492,7 +492,7 @@ def mk(to, a, n, msg=None):
         "to_": to,
         "amount": str(int(a * μ)),
         "nonce": int(n),
-        "ou": "1" if a < 1000 else "3",
+        "ou": "1000" if a < 1000 else "30000",
         "timestamp": time.time()
     }
     if msg:
